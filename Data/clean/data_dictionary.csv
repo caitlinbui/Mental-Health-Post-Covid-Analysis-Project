@@ -1,0 +1,30 @@
+column,source_variable,description,dtype,pct_missing
+resp_id,QUESTID2,Respondent ID,int64,0.0
+year,YEAR,Survey year,int16,0.0
+age_cat,AGE3,AGE3 code (raw),Int8,0.0
+age_group,derived,12-17 / 18-25 / 26+,category,0.0
+sex,IRSEX,Male / Female,category,0.0
+race_eth,NEWRACE2,"Race/ethnicity, 7 NSDUH groups",category,0.0
+race_eth5,derived,"Race/ethnicity, 5 groups (AIAN, NHPI, multiracial combined)",category,0.0
+college_status,derived,Ages 18-22: full-time / part-time / not enrolled,category,86.1
+college_ft_vs_other,derived,Ages 18-22: full-time student vs all other 18-22,category,86.1
+age_18_22,derived,True if respondent is 18-22 (has a college status),bool,0.0
+ymde_lt,YMDELT,"Youth lifetime MDE (12-17), 1/0",Int8,81.0
+ymde_py,YMDEYR,"Youth past-year MDE (12-17), 1/0",Int8,81.1
+amde_lt,AMDELT,"Adult lifetime MDE (18+), 1/0",Int8,22.3
+amde_py,AMDEYR,"Adult past-year MDE (18+), 1/0",Int8,22.5
+spd_pm,SPDPSTMON,"Serious psychological distress past month, 1/0 (18+)",Int8,19.6
+spd_py,SPDPSTYR,"Serious psychological distress past year, 1/0 (18+)",Int8,19.6
+mh_tx_py,MHTRTPY,"Received mental health treatment past year, 1/0",Int8,50.2
+ymde_tx,YMDETXRX,"Youth with MDE: received treatment for depression, 1/0",Int8,95.2
+amde_tx,AMDETXRX,"Adult with MDE: received treatment for depression, 1/0",Int8,84.3
+mde_py,derived,"Past-year MDE, youth measure for 12-17 and adult for 18+",Int8,3.6
+mde_lt,derived,"Lifetime MDE, youth measure for 12-17 and adult for 18+",Int8,3.3
+mde_tx,derived,"Received treatment for depression (if MDE), unified",Int8,79.4
+strata,VESTR_C,Variance stratum,int64,0.0
+psu,VEREP,Variance replicate (PSU),int64,0.0
+wt_1yr,ANALWT2_C1,"Analysis weight, single-year estimates",float64,0.0
+wt_2yr,ANALWT2_C2,Weight for pooling 2 years,float64,0.0
+wt_3yr,ANALWT2_C3,Weight for pooling 3 years,float64,0.0
+wt_4yr,ANALWT2_C4,Weight for pooling all 4 years,float64,0.0
+in_study,derived,True if age 12-25 (study population),bool,0.0
